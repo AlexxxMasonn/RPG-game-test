@@ -1,0 +1,12 @@
+{
+  "name": "mini-js-rpg",
+  "version": "1.0.0",
+  "description": "Mini JS RPG \u2014 Full Pack",
+  "main": "electron-main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^25.0.0"
+  }
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Mini JS RPG — Full Pack</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Mini JS RPG — Full Pack</h1>
+    <div id="hud">
+      <div>Player HP: <span id="playerHp">100</span></div>
+      <div>Gold: <span id="gold">0</span></div>
+      <div>Level: <span id="level">1</span></div>
+      <button id="saveBtn">Save</button>
+      <button id="loadBtn">Load</button>
+      <button id="musicToggle">Toggle Music</button>
+    </div>
+  </header>
+  <main>
+    <canvas id="map" width="512" height="512" tabindex="0"></canvas>
+    <aside id="controls">
+      <div id="dialogue" class="box">Talk to NPCs and accept quests.</div>
+      <div id="battle" class="box hidden">
+        <div id="enemyInfo">Enemy</div>
+        <button id="atkBtn">Attack</button>
+        <button id="defBtn">Defend</button>
+        <button id="runBtn">Run</button>
+      </div>
+      <div class="box">
+        <h3>Quests</h3>
+        <ul id="questsList"></ul>
+      </div>
+      <div class="box">
+        <h3>Inventory</h3>
+        <ul id="inventory"></ul>
+      </div>
+    </aside>
+  </main>
+  <audio id="bgm" src="assets/bg_loop.wav" loop></audio>
+  <audio id="sfxAttack" src="assets/sfx_attack.wav"></audio>
+  <audio id="sfxHeal" src="assets/sfx_heal.wav"></audio>
+  <audio id="sfxWin" src="assets/sfx_win.wav"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
